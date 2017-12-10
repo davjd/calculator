@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		637ECAFB1FDCA29200F78587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECAFA1FDCA29200F78587 /* AppDelegate.swift */; };
+		637ECAFD1FDCA29200F78587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECAFC1FDCA29200F78587 /* ViewController.swift */; };
+		637ECB001FDCA29200F78587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637ECAFE1FDCA29200F78587 /* Main.storyboard */; };
+		637ECB021FDCA29200F78587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637ECB011FDCA29200F78587 /* Assets.xcassets */; };
+		637ECB051FDCA29200F78587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637ECB031FDCA29200F78587 /* LaunchScreen.storyboard */; };
+		637ECB101FDCA29300F78587 /* tip_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECB0F1FDCA29300F78587 /* tip_calcTests.swift */; };
+		637ECB1B1FDCA29300F78587 /* tip_calcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECB1A1FDCA29300F78587 /* tip_calcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		637ECB0C1FDCA29300F78587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637ECAEF1FDCA29200F78587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637ECAF61FDCA29200F78587;
+			remoteInfo = "tip calc";
+		};
+		637ECB171FDCA29300F78587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637ECAEF1FDCA29200F78587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637ECAF61FDCA29200F78587;
+			remoteInfo = "tip calc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		637ECAF71FDCA29200F78587 /* tip calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637ECAFA1FDCA29200F78587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		637ECAFC1FDCA29200F78587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		637ECAFF1FDCA29200F78587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		637ECB011FDCA29200F78587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		637ECB041FDCA29200F78587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		637ECB061FDCA29200F78587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637ECB0B1FDCA29300F78587 /* tip calcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip calcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637ECB0F1FDCA29300F78587 /* tip_calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calcTests.swift; sourceTree = "<group>"; };
+		637ECB111FDCA29300F78587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637ECB161FDCA29300F78587 /* tip calcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip calcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637ECB1A1FDCA29300F78587 /* tip_calcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calcUITests.swift; sourceTree = "<group>"; };
+		637ECB1C1FDCA29300F78587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637ECAF41FDCA29200F78587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB081FDCA29300F78587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB131FDCA29300F78587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637ECAEE1FDCA29200F78587 = {
+			isa = PBXGroup;
+			children = (
+				637ECAF91FDCA29200F78587 /* tip calc */,
+				637ECB0E1FDCA29300F78587 /* tip calcTests */,
+				637ECB191FDCA29300F78587 /* tip calcUITests */,
+				637ECAF81FDCA29200F78587 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637ECAF81FDCA29200F78587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637ECAF71FDCA29200F78587 /* tip calc.app */,
+				637ECB0B1FDCA29300F78587 /* tip calcTests.xctest */,
+				637ECB161FDCA29300F78587 /* tip calcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637ECAF91FDCA29200F78587 /* tip calc */ = {
+			isa = PBXGroup;
+			children = (
+				637ECAFA1FDCA29200F78587 /* AppDelegate.swift */,
+				637ECAFC1FDCA29200F78587 /* ViewController.swift */,
+				637ECAFE1FDCA29200F78587 /* Main.storyboard */,
+				637ECB011FDCA29200F78587 /* Assets.xcassets */,
+				637ECB031FDCA29200F78587 /* LaunchScreen.storyboard */,
+				637ECB061FDCA29200F78587 /* Info.plist */,
+			);
+			path = "tip calc";
+			sourceTree = "<group>";
+		};
+		637ECB0E1FDCA29300F78587 /* tip calcTests */ = {
+			isa = PBXGroup;
+			children = (
+				637ECB0F1FDCA29300F78587 /* tip_calcTests.swift */,
+				637ECB111FDCA29300F78587 /* Info.plist */,
+			);
+			path = "tip calcTests";
+			sourceTree = "<group>";
+		};
+		637ECB191FDCA29300F78587 /* tip calcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				637ECB1A1FDCA29300F78587 /* tip_calcUITests.swift */,
+				637ECB1C1FDCA29300F78587 /* Info.plist */,
+			);
+			path = "tip calcUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637ECAF61FDCA29200F78587 /* tip calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637ECB1F1FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calc" */;
+			buildPhases = (
+				637ECAF31FDCA29200F78587 /* Sources */,
+				637ECAF41FDCA29200F78587 /* Frameworks */,
+				637ECAF51FDCA29200F78587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tip calc";
+			productName = "tip calc";
+			productReference = 637ECAF71FDCA29200F78587 /* tip calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		637ECB0A1FDCA29300F78587 /* tip calcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637ECB221FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calcTests" */;
+			buildPhases = (
+				637ECB071FDCA29300F78587 /* Sources */,
+				637ECB081FDCA29300F78587 /* Frameworks */,
+				637ECB091FDCA29300F78587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637ECB0D1FDCA29300F78587 /* PBXTargetDependency */,
+			);
+			name = "tip calcTests";
+			productName = "tip calcTests";
+			productReference = 637ECB0B1FDCA29300F78587 /* tip calcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		637ECB151FDCA29300F78587 /* tip calcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637ECB251FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calcUITests" */;
+			buildPhases = (
+				637ECB121FDCA29300F78587 /* Sources */,
+				637ECB131FDCA29300F78587 /* Frameworks */,
+				637ECB141FDCA29300F78587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637ECB181FDCA29300F78587 /* PBXTargetDependency */,
+			);
+			name = "tip calcUITests";
+			productName = "tip calcUITests";
+			productReference = 637ECB161FDCA29300F78587 /* tip calcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637ECAEF1FDCA29200F78587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "David Medina";
+				TargetAttributes = {
+					637ECAF61FDCA29200F78587 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					637ECB0A1FDCA29300F78587 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 637ECAF61FDCA29200F78587;
+					};
+					637ECB151FDCA29300F78587 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 637ECAF61FDCA29200F78587;
+					};
+				};
+			};
+			buildConfigurationList = 637ECAF21FDCA29200F78587 /* Build configuration list for PBXProject "tip calc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 637ECAEE1FDCA29200F78587;
+			productRefGroup = 637ECAF81FDCA29200F78587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637ECAF61FDCA29200F78587 /* tip calc */,
+				637ECB0A1FDCA29300F78587 /* tip calcTests */,
+				637ECB151FDCA29300F78587 /* tip calcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637ECAF51FDCA29200F78587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637ECB051FDCA29200F78587 /* LaunchScreen.storyboard in Resources */,
+				637ECB021FDCA29200F78587 /* Assets.xcassets in Resources */,
+				637ECB001FDCA29200F78587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB091FDCA29300F78587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB141FDCA29300F78587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637ECAF31FDCA29200F78587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637ECAFD1FDCA29200F78587 /* ViewController.swift in Sources */,
+				637ECAFB1FDCA29200F78587 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB071FDCA29300F78587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637ECB101FDCA29300F78587 /* tip_calcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637ECB121FDCA29300F78587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637ECB1B1FDCA29300F78587 /* tip_calcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		637ECB0D1FDCA29300F78587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637ECAF61FDCA29200F78587 /* tip calc */;
+			targetProxy = 637ECB0C1FDCA29300F78587 /* PBXContainerItemProxy */;
+		};
+		637ECB181FDCA29300F78587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637ECAF61FDCA29200F78587 /* tip calc */;
+			targetProxy = 637ECB171FDCA29300F78587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637ECAFE1FDCA29200F78587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637ECAFF1FDCA29200F78587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		637ECB031FDCA29200F78587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637ECB041FDCA29200F78587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637ECB1D1FDCA29300F78587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		637ECB1E1FDCA29300F78587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637ECB201FDCA29300F78587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		637ECB211FDCA29300F78587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		637ECB231FDCA29300F78587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tip calc.app/tip calc";
+			};
+			name = Debug;
+		};
+		637ECB241FDCA29300F78587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tip calc.app/tip calc";
+			};
+			name = Release;
+		};
+		637ECB261FDCA29300F78587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calcUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tip calc";
+			};
+			name = Debug;
+		};
+		637ECB271FDCA29300F78587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tip calcUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dmedina.tip-calcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tip calc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637ECAF21FDCA29200F78587 /* Build configuration list for PBXProject "tip calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637ECB1D1FDCA29300F78587 /* Debug */,
+				637ECB1E1FDCA29300F78587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637ECB1F1FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637ECB201FDCA29300F78587 /* Debug */,
+				637ECB211FDCA29300F78587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637ECB221FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637ECB231FDCA29300F78587 /* Debug */,
+				637ECB241FDCA29300F78587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637ECB251FDCA29300F78587 /* Build configuration list for PBXNativeTarget "tip calcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637ECB261FDCA29300F78587 /* Debug */,
+				637ECB271FDCA29300F78587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637ECAEF1FDCA29200F78587 /* Project object */;
+}
