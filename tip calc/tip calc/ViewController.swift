@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var percentChoice: UISegmentedControl!
-    @IBOutlet weak var totalLable: UILabel!
-    @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
+    @IBOutlet weak var totalLabel: UITextField!
+    @IBOutlet weak var tipLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         let total: Double = bill + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
-        totalLable.text = String(format: "$%.2f", total)
+        totalLabel.text = String(format: "$%.2f", total)
     }
     
     func parsePercent(_ percent: String) -> Double{
