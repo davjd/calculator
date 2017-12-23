@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tip_calc" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,13 @@
                             <outletCollection property="gestureRecognizers" destination="BAl-8Y-aSo" appends="YES" id="9iB-k0-G4k"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="svC-8n-26h"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="svC-8n-26h">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="dUP-lJ-ewH">
+                            <connections>
+                                <segue destination="V2b-XT-V5f" kind="push" id="zlg-lh-Xc4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="0IP-hW-dhi" id="ba2-sG-TxN"/>
                         <outlet property="percentChoice" destination="aDH-K9-4W1" id="pdd-Lc-wfk"/>
@@ -99,6 +105,62 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="295.5" y="139.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="5CP-Kn-ela">
+            <objects>
+                <viewController id="V2b-XT-V5f" customClass="SettingsViewController" customModule="tip_calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="zJI-XV-zUz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="sBU-OM-fxg">
+                                <rect key="frame" x="31" y="267" width="312" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <color key="tintColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="WQ3-6R-ifd"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
+                                <rect key="frame" x="83" y="229" width="208" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="0pE-a8-fux">
+                                <rect key="frame" x="31" y="384" width="312" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <color key="tintColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="xoU-nY-0eX"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
+                                <rect key="frame" x="83" y="346" width="208" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wMI-Hb-QaT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCZ-d2-koW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707.5" y="141.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TMd-Kj-I0y">
