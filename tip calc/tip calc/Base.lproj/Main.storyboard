@@ -17,23 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="center" misplaced="YES" id="oih-gz-v9f">
-                                <rect key="frame" x="0.0" y="296" width="376" height="7"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="aDH-K9-4W1">
-                                <rect key="frame" x="31" y="421" width="312" height="29"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                    <segment title="25%"/>
-                                </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="UzH-3y-DPB"/>
-                                </connections>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" id="0IP-hW-dhi">
                                 <rect key="frame" x="0.0" y="64" width="343" height="108"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,8 +28,27 @@
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="b5H-vg-tVV"/>
                                 </connections>
                             </textField>
+                            <view contentMode="center" misplaced="YES" id="IQh-6h-uk5">
+                                <rect key="frame" x="33" y="174" width="311" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="center" misplaced="YES" id="oih-gz-v9f">
+                                <rect key="frame" x="33" y="279" width="311" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="aDH-K9-4W1">
+                                <rect key="frame" x="31" y="391" width="312" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mhE-da-gJ6">
-                                <rect key="frame" x="32" y="225" width="104" height="21"/>
+                                <rect key="frame" x="32" y="206" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$00.0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="10f-Ow-RIf">
-                                <rect key="frame" x="31" y="370" width="312" height="43"/>
+                                <rect key="frame" x="32" y="334" width="312" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="1" green="0.81576296240000001" blue="0.72134380580000002" alpha="0.96101776539999995" colorSpace="custom" customColorSpace="displayP3"/>
@@ -62,7 +64,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$00.0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="Y2m-PB-iKu">
-                                <rect key="frame" x="32" y="254" width="312" height="36"/>
+                                <rect key="frame" x="32" y="235" width="312" height="36"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="1" green="0.81576296240000001" blue="0.72134380580000002" alpha="0.96101776539999995" colorSpace="custom" customColorSpace="displayP3"/>
@@ -70,7 +72,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mKg-Qq-Wid">
-                                <rect key="frame" x="32" y="341" width="104" height="21"/>
+                                <rect key="frame" x="33" y="305" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -124,7 +126,8 @@
                                 </segments>
                                 <color key="tintColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="WQ3-6R-ifd"/>
+                                    <action selector="savePercent:" destination="V2b-XT-V5f" eventType="valueChanged" id="0IZ-dl-Yg3"/>
+                                    <action selector="savePercentage:" destination="oDS-8P-QSd" eventType="valueChanged" id="83S-zS-1rJ"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
@@ -144,6 +147,8 @@
                                 <color key="tintColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="xoU-nY-0eX"/>
+                                    <action selector="saveMode:" destination="oDS-8P-QSd" eventType="valueChanged" id="QYl-3g-BjX"/>
+                                    <action selector="saveMode:" destination="V2b-XT-V5f" eventType="valueChanged" id="gP8-7D-fkF"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
@@ -157,8 +162,15 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wMI-Hb-QaT"/>
+                    <connections>
+                        <outlet property="modeChoice" destination="0pE-a8-fux" id="4DW-u9-fID"/>
+                        <outlet property="modeLabel" destination="giv-wy-FLp" id="Bgz-a3-h33"/>
+                        <outlet property="percentChoice" destination="sBU-OM-fxg" id="KBY-lc-BgW"/>
+                        <outlet property="percentLabel" destination="Xh9-RA-sjR" id="YTA-Y1-W8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCZ-d2-koW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oDS-8P-QSd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="707.5" y="141.5"/>
         </scene>

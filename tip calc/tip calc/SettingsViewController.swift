@@ -10,10 +10,23 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var percentChoice: UISegmentedControl!
+    @IBOutlet weak var modeChoice: UISegmentedControl!
+    @IBOutlet weak var percentLabel: UITextField!
+    @IBOutlet weak var modeLabel: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // set the default mode colors.
+        let defaults = UserDefaults.standard
+        let mode = defaults.string(forKey: "mode") ?? "Dark"
+        setModeColors(mode)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +34,62 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func savePercent(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        let newPercent = getSelectedPercent()
+        defaults.set(newPercent, forKey: "percent")
+        defaults.synchronize()
+    }
+    
+    @IBAction func saveMode(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        let newMode = getSelectedMode()
+        defaults.set(newMode, forKey: "mode")
+        defaults.synchronize()
+    }
+    
+    func parsePercent(_ percent: String) -> Double{
+        let start = percent.index(percent.startIndex, offsetBy: 0)
+        let end = percent.index(percent.endIndex, offsetBy: -1)
+        return (Double(percent[start..<end])! / 100)
+    }
+    
+    func getSelectedPercent() -> Double{
+        let percentText = percentChoice.titleForSegment(at: percentChoice.selectedSegmentIndex)!
+        return parsePercent(percentText)
+    }
+    
+    func getSelectedMode() -> String{
+        return modeChoice.titleForSegment(at: modeChoice.selectedSegmentIndex)!
+    }
+    
+    func setModeColors(_ mode: String){
+        let primaryColor : UIColor
+        let subColor : UIColor
+        if (mode == "Light"){
+            primaryColor = UIColor.black
+            subColor = UIColor(red: 0xFF / 0xFF, green: 0xC9 / 0xFF, blue: 0xB0 / 0xFF, alpha: 0xFF / 0xFF)
+        }
+        else{
+            primaryColor = UIColor(red: 0xFF / 0xFF, green: 0xC9 / 0xFF, blue: 0xB0 / 0xFF, alpha: 0xFF / 0xFF)
+            subColor = UIColor.black
+        }
+        setColors(primaryColor, subColor)
+    }
+    
+    func setColors(_ primaryColor: UIColor, _ subColor: UIColor){
+        self.view.backgroundColor = subColor
+        percentLabel.textColor = primaryColor
+        modeLabel.textColor = primaryColor
+        modeLabel.tintColor = UIColor.red
+        percentLabel.tintColor = UIColor.red
+        percentLabel.layer.borderColor = UIColor.red.cgColor
+        modeLabel.layer.borderColor = UIColor.red.cgColor
+        percentChoice.tintColor = primaryColor
+        percentChoice.backgroundColor = subColor
+        modeChoice.tintColor = primaryColor
+        modeChoice.backgroundColor = subColor
+    }
 
     /*
     // MARK: - Navigation
