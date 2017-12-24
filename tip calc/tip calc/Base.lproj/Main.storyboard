@@ -84,9 +84,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="BAl-8Y-aSo" appends="YES" id="9iB-k0-G4k"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="svC-8n-26h">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="dUP-lJ-ewH">
@@ -97,17 +94,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="0IP-hW-dhi" id="ba2-sG-TxN"/>
+                        <outlet property="midLine" destination="oih-gz-v9f" id="9XQ-uh-7V9"/>
                         <outlet property="percentChoice" destination="aDH-K9-4W1" id="pdd-Lc-wfk"/>
+                        <outlet property="tipHeader" destination="mhE-da-gJ6" id="1W4-LB-FHF"/>
                         <outlet property="tipLabel" destination="Y2m-PB-iKu" id="99Z-lo-Uqz"/>
+                        <outlet property="topLine" destination="IQh-6h-uk5" id="YTx-lz-wyJ"/>
+                        <outlet property="totalHeader" destination="mKg-Qq-Wid" id="zfq-5C-KwR"/>
                         <outlet property="totalLabel" destination="10f-Ow-RIf" id="E8v-ws-Ivu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="BAl-8Y-aSo">
-                    <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="ky7-IR-WEJ"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="295.5" y="139.5"/>
         </scene>
@@ -133,7 +129,7 @@
                                     <action selector="savePercentage:" destination="oDS-8P-QSd" eventType="valueChanged" id="83S-zS-1rJ"/>
                                 </connections>
                             </segmentedControl>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
+                            <textField autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
                                 <rect key="frame" x="83" y="229" width="208" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -154,7 +150,7 @@
                                     <action selector="saveMode:" destination="V2b-XT-V5f" eventType="valueChanged" id="gP8-7D-fkF"/>
                                 </connections>
                             </segmentedControl>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
+                            <textField autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
                                 <rect key="frame" x="83" y="354" width="208" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -25,10 +25,11 @@ class SettingsViewController: UIViewController {
         
         // set the default mode colors.
         let defaults = UserDefaults.standard
-        let mode = defaults.string(forKey: "mode") ?? "Light"
+        let modeIdx = defaults.integer(forKey: "mode")
         let percentIdx = defaults.integer(forKey: "percent")
-        setModeColors(mode)
         percentChoice.selectedSegmentIndex = percentIdx
+        modeChoice.selectedSegmentIndex = modeIdx
+        setModeColors(modeIdx)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,19 +45,22 @@ class SettingsViewController: UIViewController {
     
     @IBAction func saveMode(_ sender: Any) {
         let defaults = UserDefaults.standard
-        let newMode = getSelectedMode()
-        defaults.set(newMode, forKey: "mode")
+        defaults.set(modeChoice.selectedSegmentIndex, forKey: "mode")
         defaults.synchronize()
+        
+        setModeColors(modeChoice.selectedSegmentIndex)
+        modeLabel.text = "Mode"
+        percentLabel.text = "Percentage"
     }
     
     func getSelectedMode() -> String{
         return modeChoice.titleForSegment(at: modeChoice.selectedSegmentIndex)!
     }
     
-    func setModeColors(_ mode: String){
+    func setModeColors(_ mode: Int){
         let primaryColor : UIColor
         let subColor : UIColor
-        if (mode == "Light"){
+        if (mode == 0){
             primaryColor = UIColor.black
             subColor = UIColor(red: 0xFF / 0xFF, green: 0xC9 / 0xFF, blue: 0xB0 / 0xFF, alpha: 0xFF / 0xFF)
         }

@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UITextField!
     @IBOutlet weak var tipLabel: UITextField!
+    @IBOutlet weak var totalHeader: UILabel!
+    @IBOutlet weak var tipHeader: UILabel!
+    @IBOutlet weak var topLine: UIView!
+    @IBOutlet weak var midLine: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +26,13 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        billField.becomeFirstResponder()
         
         // set the default mode colors.
         let defaults = UserDefaults.standard
-        let mode = defaults.string(forKey: "mode") ?? "Light"
+        let modeIdx = defaults.integer(forKey: "mode")
         let percentIdx = defaults.integer(forKey: "percent")
-        //setModeColors(mode)
+        setModeColors(modeIdx)
         percentChoice.selectedSegmentIndex = percentIdx
         updateCaculation()
     }
@@ -56,6 +61,36 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+    }
+    
+    func setModeColors(_ mode: Int){
+        let primaryColor : UIColor
+        let subColor : UIColor
+        if (mode == 0){
+            primaryColor = UIColor.black
+            subColor = UIColor(red: 0xFF / 0xFF, green: 0xC9 / 0xFF, blue: 0xB0 / 0xFF, alpha: 0xFF / 0xFF)
+        }
+        else{
+            primaryColor = UIColor(red: 0xFF / 0xFF, green: 0xC9 / 0xFF, blue: 0xB0 / 0xFF, alpha: 0xFF / 0xFF)
+            subColor = UIColor.black
+        }
+        setColors(primaryColor, subColor)
+    }
+    
+    func setColors(_ primaryColor: UIColor, _ subColor: UIColor){
+        self.view.backgroundColor = subColor
+        tipLabel.textColor = subColor
+        tipLabel.backgroundColor = primaryColor
+        totalLabel.textColor = subColor
+        totalLabel.backgroundColor = primaryColor
+        billField.textColor = primaryColor
+        billField.tintColor = primaryColor
+        percentChoice.tintColor = primaryColor
+        percentChoice.backgroundColor = subColor
+        topLine.backgroundColor = primaryColor
+        midLine.backgroundColor = primaryColor
+        tipHeader.textColor = primaryColor
+        totalHeader.textColor = primaryColor
     }
     
     func parsePercent(_ percent: String) -> Double{
