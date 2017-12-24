@@ -46,6 +46,9 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentCalcUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="bob-US-p0Q"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mhE-da-gJ6">
                                 <rect key="frame" x="32" y="206" width="104" height="21"/>
@@ -112,7 +115,7 @@
         <scene sceneID="5CP-Kn-ela">
             <objects>
                 <viewController id="V2b-XT-V5f" customClass="SettingsViewController" customModule="tip_calc" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="zJI-XV-zUz">
+                    <view key="view" contentMode="scaleToFill" id="zJI-XV-zUz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -130,7 +133,7 @@
                                     <action selector="savePercentage:" destination="oDS-8P-QSd" eventType="valueChanged" id="83S-zS-1rJ"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Percentage" borderStyle="line" textAlignment="center" minimumFontSize="17" id="Xh9-RA-sjR">
                                 <rect key="frame" x="83" y="229" width="208" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -138,7 +141,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="0pE-a8-fux">
-                                <rect key="frame" x="31" y="384" width="312" height="29"/>
+                                <rect key="frame" x="31" y="392" width="312" height="29"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Light"/>
@@ -151,8 +154,8 @@
                                     <action selector="saveMode:" destination="V2b-XT-V5f" eventType="valueChanged" id="gP8-7D-fkF"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
-                                <rect key="frame" x="83" y="346" width="208" height="30"/>
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mode" borderStyle="line" textAlignment="center" minimumFontSize="17" id="giv-wy-FLp">
+                                <rect key="frame" x="83" y="354" width="208" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.96835196020000003" green="0.79826617239999997" blue="0.70590567589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -160,6 +163,10 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bW9-3y-lbl" appends="YES" id="GJ8-1j-6a1"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wMI-Hb-QaT"/>
                     <connections>
@@ -171,6 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCZ-d2-koW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oDS-8P-QSd" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="bW9-3y-lbl"/>
             </objects>
             <point key="canvasLocation" x="707.5" y="141.5"/>
         </scene>

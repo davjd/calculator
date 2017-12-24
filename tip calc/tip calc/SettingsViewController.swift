@@ -25,8 +25,10 @@ class SettingsViewController: UIViewController {
         
         // set the default mode colors.
         let defaults = UserDefaults.standard
-        let mode = defaults.string(forKey: "mode") ?? "Dark"
+        let mode = defaults.string(forKey: "mode") ?? "Light"
+        let percentIdx = defaults.integer(forKey: "percent")
         setModeColors(mode)
+        percentChoice.selectedSegmentIndex = percentIdx
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,8 +38,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func savePercent(_ sender: Any) {
         let defaults = UserDefaults.standard
-        let newPercent = getSelectedPercent()
-        defaults.set(newPercent, forKey: "percent")
+        defaults.set(percentChoice.selectedSegmentIndex, forKey: "percent")
         defaults.synchronize()
     }
     
@@ -46,17 +47,6 @@ class SettingsViewController: UIViewController {
         let newMode = getSelectedMode()
         defaults.set(newMode, forKey: "mode")
         defaults.synchronize()
-    }
-    
-    func parsePercent(_ percent: String) -> Double{
-        let start = percent.index(percent.startIndex, offsetBy: 0)
-        let end = percent.index(percent.endIndex, offsetBy: -1)
-        return (Double(percent[start..<end])! / 100)
-    }
-    
-    func getSelectedPercent() -> Double{
-        let percentText = percentChoice.titleForSegment(at: percentChoice.selectedSegmentIndex)!
-        return parsePercent(percentText)
     }
     
     func getSelectedMode() -> String{
@@ -81,10 +71,10 @@ class SettingsViewController: UIViewController {
         self.view.backgroundColor = subColor
         percentLabel.textColor = primaryColor
         modeLabel.textColor = primaryColor
-        modeLabel.tintColor = UIColor.red
-        percentLabel.tintColor = UIColor.red
-        percentLabel.layer.borderColor = UIColor.red.cgColor
-        modeLabel.layer.borderColor = UIColor.red.cgColor
+        percentLabel.layer.borderColor = primaryColor.cgColor
+        modeLabel.layer.borderColor = primaryColor.cgColor
+        modeLabel.layer.borderWidth = 1.0
+        percentLabel.layer.borderWidth = 1.0
         percentChoice.tintColor = primaryColor
         percentChoice.backgroundColor = subColor
         modeChoice.tintColor = primaryColor
